@@ -102,4 +102,48 @@ Note that, based on stirling approximation:
     2. Merge sorted halves into one sorted array (two finger algorithm)
 
 
+## Quick Select
+
+This is an extension of the quick sort algorithm to select the kth largest element in an array. 
+
+**Time complexity**: on average O(N)
+
+On average: 
+
+    T(N) = T(c*N) + O(N)-> O(N)
+
+Worst case: 
+    T(N) = T(N-1) + O(N) -> O(N^2)
+
+**Space complexity**: O(1)
+
+**Steps**:
+    
+    1. Choose a random pivot. 
+    2. Use partition to place the pivot to its position pos. Move smaller elements to the left, and larger element to the right. 
+    3. Compare pos with n-k to choose the side of the array to proceed recursively. 
+
+
+## Counting Sort
+
+**Time complexity**: O(N+k)
+**Space complexity**: O(N+K)
+
+K: max value in the array (assume the smallest value is 0, all integers.)
+
+**Steps**:
+    
+    1. Initialize counts array to store the counts. 
+    2. Cumsum counts. 
+    3. for every element A[i]:
+        output[count[A[i]]] = A[i]
+        count[A[i]] += 1
+    
+**Properties**:
+    
+    1. Stable sort. 
+    2. Faster in a small range of values. 
+    3. Require extra memeory. 
+    4. If K very large compared to N, it's possible to be worse than O(NlogN).
+
 
