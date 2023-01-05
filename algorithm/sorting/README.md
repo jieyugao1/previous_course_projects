@@ -33,7 +33,7 @@
 
 **Time complexity**: O(N^2)
 
-worst case: T(n) = T(n) + O(N)
+    T(N) = T(N-1) + O(N)
 
 **Space complexity**: O(1)
 
@@ -44,9 +44,9 @@ worst case: T(n) = T(n) + O(N)
 
 ## Quick Sort
 
-**Time complexity**: O(nlogn)
+**Time complexity**: O(NlogN)
 
-T(n) = T(k) + T(n-k-1) + $\theta(n)$
+    $T(n) = T(k) + T(n-k-1) + \theta(n)$
 
 Worst case: O(n^2)
 
