@@ -8,7 +8,7 @@
 
 **Space complexity**: O(1)
 
-** Steps :**
+**Steps**:
     
     1. Find a largest number in A[:i + 1] and swap it to A[i]
     2. i = i - 1
