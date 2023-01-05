@@ -58,7 +58,12 @@ Best case: O(NlogN)
 
 **Space complexity**: O(1)
 
-
+**Steps**:
+    
+    1. In each pass, randomly (or other selection criterion) select the pivot value. 
+    2. in each round, find the index of the pivot value, put all values that are less than the pivot value to the left, that are larger than the pivot value to the right. 
+    3. Recursively sort the array by repeating step 1 and step 2 on both side around the pivot value. 
+    
 
 ## Merge Sort 
 
