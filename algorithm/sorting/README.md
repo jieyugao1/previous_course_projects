@@ -92,7 +92,7 @@ Note that, based on stirling approximation:
 
 **Time complexity:** O(NlogN)
 
-    T(N) = $\frac{1}{2}$T(N/2) + O(N)
+    T(N) = (1/2)T(N/2) + O(N)
 
 **Space complexity:** O(1)
 
