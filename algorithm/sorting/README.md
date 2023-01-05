@@ -96,6 +96,10 @@ Note that, based on stirling approximation:
 
 **Space complexity:** O(1)
 
+**Steps**:
+    
+    1. Recursively sort first half and second half of the array. 
+    2. Merge sorted halves into one sorted array (two finger algorithm)
 
 
 
