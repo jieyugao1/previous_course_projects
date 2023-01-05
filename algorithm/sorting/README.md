@@ -2,7 +2,7 @@
 
 ## Selection Sort
 
-**Time complexity**: O($$N^2$$)
+**Time complexity**: O(N^2)
     
     T(N) = T(N-1) + O(N)
 
@@ -17,7 +17,7 @@
     
 ## Insertion Sort
 
-**Time complexity**: O($N^2$)
+**Time complexity**: O(N^2)
 
     T(N) = T(N-1) + O(N)
 
@@ -30,6 +30,30 @@
     3. Sort A[:i+1] assuming that A[:i] is sorted. (Repeated swaps)
 
 ## Bubble Sort
+
+**Time complexity**: O(N^2)
+
+worst case: T(n) = T(n) + O(N)
+
+**Space complexity**: O(1)
+
+**Steps**:
+
+    1. Consider two adjacent elements at a time, if out of order, swap. 
+    2. Repeat step 1 until no more swaps are made in a single pass. 
+
+## Quick Sort
+
+**Time complexity**: O(nlogn)
+
+T(n) = T(k) + T(n-k-1) + $\theta(n)$
+
+Worst case: O(n^2)
+
+Best case: O(nlogn)
+
+
+**Space complexity**: O(1)
 
 
 
