@@ -146,4 +146,29 @@ K: max value in the array (assume the smallest value is 0, all integers.)
     3. Require extra memeory. 
     4. If K very large compared to N, it's possible to be worse than O(NlogN).
 
+## Radix Sort (LSD)
+
+This is an extension of counting sort. 
+
+**Time complexity**: O(w(N + K)), where w is the number of digits. 
+
+**Space complexity**: O(N+K).
+
+**Steps**:
+    
+    1. Start with the least significant digit, perform a counting sort on it. 
+    2. Move forward. Process all the digits. 
+
+## Bucket Sort
+
+**Time complexity**: on average: O(N+K), where K is the number of bucket; worst case: O(N^2)
+
+**Space complexity:** O(N+K), where K is the number of bucket.
+
+**Steps**:
+    
+    1. Initiate the bucket. 
+    2. Place each value into the appropriate bucket, (i.e. floor(k*A[i])/max(A)).
+    3. Sort each bucket. 
+    4. Combine the values to an array. 
 
