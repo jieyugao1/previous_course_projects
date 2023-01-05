@@ -64,6 +64,25 @@ Best case: O(NlogN)
     2. in each round, find the index of the pivot value, put all values that are less than the pivot value to the left, that are larger than the pivot value to the right. 
     3. Recursively sort the array by repeating step 1 and step 2 on both side around the pivot value. 
     
+## Heap Sort
+
+Heap sort is a direct optimizaiton of the selection sort. 
+
+**Time complexity**: O(NlogN)
+
+    1. Building a max-heap: O(N)
+    2. Removing any element in the max-heap: O(logK), where K is the number of elements in the heap. 
+
+Note that, based on stirling approximation:
+
+    O(logn + log(n-1) + ... + log(1)) = O(log(n!)) = O(nlogn) 
+
+    T(N) = O(N) + O(NlogN) = O(NlogN)
+
+**Space complexity**: O(1)
+
+
+
 
 ## Merge Sort 
 
