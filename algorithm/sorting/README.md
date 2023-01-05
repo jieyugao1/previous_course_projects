@@ -90,7 +90,12 @@ Note that, based on stirling approximation:
 
 ## Merge Sort 
 
-Time complexity: O(nlogn)
-Space complexity: O(1)
+**Time complexity:** O(NlogN)
+
+    T(N) = \frac{1}{2}T(N/2) + O(N)
+
+**Space complexity:** O(1)
+
+
 
 
