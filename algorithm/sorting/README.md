@@ -2,7 +2,7 @@
 
 ## Selection Sort
 
-**Time complexity**: O($N^2$)
+**Time complexity**: O($$N^2$$)
     
     T(N) = T(N-1) + O(N)
 
