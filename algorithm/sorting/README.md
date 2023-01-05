@@ -46,7 +46,7 @@
 
 **Time complexity**: O(NlogN)
 
-    $T(n) = T(k) + T(n-k-1) + \theta(n)$
+    $T(N) = T(k) + T(N-k-1) + O(N)$
 
 Worst case: O(n^2)
 
