@@ -31,7 +31,16 @@ e.g. **Multivariate feature imputation**:
         
         from sklearn.preprocessing import LabelEncoder
 
-    
+## Split the test set and training set
+
+We split the test set and training set before feature scaling to prevent the data leackage or additional information that we can obtain from the test set, which was supposed to be missing in real life applications.     
+
+
+        e.g. sklearn.model_selection.train_test_split
+
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.2, random_state = 1)
+
+
 
 ## Feature Scaling
 
