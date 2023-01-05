@@ -62,4 +62,6 @@ We split the test set and training set before feature scaling to prevent the dat
 
 MaxAbsScaler was specifically designed for scaling sparse data, and is the recommended way to go about this. However, StandardScaler can accept scipy.sparse matrices as input, as long as with_mean=False is explicitly passed to the constructor. Otherwise a ValueError will be raised as silently centering would break the sparsity and would often crash the execution by allocating excessive amounts of memory unintentionally. RobustScaler cannot be fitted to sparse inputs, but you can use the transform method on sparse inputs.
 
+### Additional Preprocessing Information
 
+More info can be found at: https://scikit-learn.org/stable/modules/preprocessing.html
