@@ -81,7 +81,11 @@ Note that, based on stirling approximation:
 
 **Space complexity**: O(1)
 
-
+**Steps**:
+    
+    1. Convert the array into max-heap. 
+    2. The maximum value is stored at the root of the heap. Swap the root with the last item of the heap. Reduce the heap size by 1. Heapify the root of the tree. 
+    3. Repeat step 2 until the size of the heap equals to 1. 
 
 
 ## Merge Sort 
