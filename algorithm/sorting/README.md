@@ -46,11 +46,14 @@
 
 **Time complexity**: O(NlogN)
 
-    $T(N) = T(k) + T(N-k-1) + O(N)$
+    T(N) = T(k) + T(N-k-1) + O(N)
 
-Worst case: O(n^2)
+Worst case: O(N^2)
 
-Best case: O(nlogn)
+Best case: O(NlogN)
+
+    1. Faster in practice. 
+    2. Not a stable sort.
 
 
 **Space complexity**: O(1)
