@@ -1,12 +1,20 @@
-# Feature Scaling
+# Import Libraries
+# Import the data
+# Missign Values
+## Imputation
 
-## Normalization 
+e.g. sklearn.impute package
+
+
+## Feature Scaling
+
+### Normalization 
 
 ```math
     X' = \frac{X - X_{min}}{X_{max} - X_{min}}
 ```
 
-## Standardization:
+### Standardization:
 
 ```math
     X' = \frac{X - \mu}{\sigma}
