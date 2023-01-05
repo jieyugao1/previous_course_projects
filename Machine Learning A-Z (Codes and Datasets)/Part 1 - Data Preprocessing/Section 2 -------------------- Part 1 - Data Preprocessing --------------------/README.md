@@ -1,7 +1,7 @@
-# Import Libraries
-# Import the data
-# Missign Values
-## Imputation
+## Import Libraries
+## Import the data
+## Missing Values
+### Imputation
 
 e.g. sklearn.impute package
 
