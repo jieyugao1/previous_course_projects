@@ -20,12 +20,14 @@ class Solution:
             for i in range(len(inds)): 
                 inds[counts[eles[i]]] = nums2[i]
                 counts[eles[i]] += 1
+
             for i in range(len(nums2)):
                 nums2[i] = inds[i]
                 
         res = []
         # initialize the eles0
         res2 = {}
+        res_ind = {}
         for e in queries:
             ki, trimi = e[0], e[1]
             if trimi not in res2:
@@ -38,6 +40,7 @@ class Solution:
                         nums2 = res2[start]
                 else:
                     nums2 = [ele for ele in nums]
+                    #ind_0 = [e for e in range(len(nums))]
                 for j in range(start - 1, trimi):
                     countingSort(j)
                     res2[j+1] = [ele for ele in nums2]
@@ -45,21 +48,26 @@ class Solution:
             else:
                 nums2 = res2[trimi]
             # to avoid the repeated issues: create a included array
-            included = [0] * len(nums)
+            #included = [0] * len(nums)
             #print(nums2)
-            start = 0 
-            for i in range(ki):
-                j = 0
-                while j < len(nums):
-                    if (not included[j]) and (nums2[i] == nums[j]):
-                        included[j] = 1
-                        start = j
+            #start = 0 
+            val = nums2[ki - 1] # the value to report
+            cc = nums2.index(val) # the first occurance
+            diff = ki - cc # the diff-th occurance
+            for i in range(len(nums)):
+                if nums[i] == val:
+                    diff -= 1
+                    if diff == 0:
+                        res.append(i)
                         break
-                    j = j + 1
-            #print(inds)
-            res.append(start)
         return res
                 
+                
+            
+            
+            
+            
+        
                 
             
             
