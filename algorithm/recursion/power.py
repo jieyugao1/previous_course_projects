@@ -8,3 +8,4 @@ def power(n, a):
     return 1
 print(power(2, 8))
 print(power(-2, -7))
+print(power(2.1, 3))
