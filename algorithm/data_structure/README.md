@@ -71,4 +71,12 @@ If two or multiple keys hash to the same slot, we call this situation a **collis
 
     **Simple Uniform hashing assumption**: any given element is equally likely to hash into any of the m slots, independently of where any other element has hashed to. 
 
-    for j = 0, 1, ..., m-1, let us denote the lenght of T[j] by n_j, so that n = n_0 + n_1 + ... + n_(m-1), and the expected value of n_j is ```math \alpha = \frac{n}{m} ```
+    for j = 0, 1, ..., m-1, let us denote the lenght of T[j] by n_j, so that n = n_0 + n_1 + ... + n_(m-1), and the expected value of n_j is alpha = n/m.
+
+    Search takes average-case time O(1+alpha) under the simple uniform hashing assumption. 
+
+    If the number of hash-tale slots is at least proportional to the number of elements in the table, alpha = 1. Thus searching takes constant time on average. We can support all dictionary operations in O(1) time on average. 
+
+#### Hash Functions
+
+
