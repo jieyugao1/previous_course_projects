@@ -36,7 +36,9 @@ Normally there are two types of linked list, **doubly linked list** and **singly
 
 A hash table is an effective data structure for implementing dictionaries. Under reasonable assumptions, the average time to search fro an element in a hash table is O(1).
 
-### Direct-address tables: simple technique that works well when the universe U of keys is reasonale small. T[x.key] =x. Each of the operations, including search, insert and delete takes O(1) time. 
+### Direct-address tables
+
+This is a simple technique that works well when the universe U of keys is reasonale small. T[x.key] =x. Each of the operations, including search, insert and delete takes O(1) time. 
 
 If U is large, storing a table T of size |U| may be impractical or impossible. 
 
