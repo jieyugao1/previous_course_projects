@@ -79,4 +79,8 @@ If the number of hash-tale slots is at least proportional to the number of eleme
 
 #### Hash Functions
 
+##### Division Method
 
+##### Multiplication Method
+
+##### Universal Method
