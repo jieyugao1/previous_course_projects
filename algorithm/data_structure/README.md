@@ -50,4 +50,25 @@ While direct addressing, an element with key k is stored in slot k. With hashing
 
 ```math
     h: U \rightarrow \{0, 1, ..., m-1\}
-``` 
+```
+where the size m of the hash table is typically much less than |U|. 
+
+We say that an element with key k hashes to slot h(k). h(k) is the **hash value** of key k. 
+
+If two or multiple keys hash to the same slot, we call this situation a **collision**. 
+
+**Solution**:
+    
+    1. Chaining. 
+
+    In chaining, we place all the elements that has to the same slot into the same linked list. 
+
+    The worst-case running time for **insertion** is O(1). For searching, the worst-case running time is proportional to the length of the list. We can delete the element in O(1) time if doubly linked. If the list is singly linked, we need to search for x in the list T[(x.key)] to update the next attribute of x's predecessor, which takes O(n) time. 
+
+    The worst case behaviro of hashing with chaining is terrible: all n keys hash to the same slot, creating a length n. 
+
+    The average case performance of hashing depends on how well the hash function h distributes the keys to be stored among the m slots, on the average. 
+
+    **Simple Uniform hashing assumption**: any given element is equally likely to hash into any of the m slots, independently of where any other element has hashed to. 
+
+    for j = 0, 1, ..., m-1, let us denote the lenght of T[j] by n_j, so that n = n_0 + n_1 + ... + n_(m-1), and the expected value of n_j is $\alpha = n/m$.
