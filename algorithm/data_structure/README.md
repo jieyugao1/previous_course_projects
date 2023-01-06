@@ -9,6 +9,7 @@ The stack implements a last-in, first-out or LIFO policy.
 The insert operation on a stack is often called **PUSH**, and the delete operation is often called **POP**. 
 
 **Steps**:
+    
     1. Implement a stack of at most n elements wiht an array S[1,...,n]
     2. The array has an attribute S.top that indexes the most recently inserted element. The stack consists of elements S[1,...,S.top]
     3. WHen S.top = 0, the stack contains no element and is empty. If we attemp to pop an empty stack, we say the stack **underflows*, which is normally an error. If S.top exceeds n, the stack **overflows**.
@@ -18,6 +19,7 @@ The insert operation on a stack is often called **PUSH**, and the delete operati
 In a queue, the element deleted is always the one that has been in the set for the longest time. The queue implements a first-in, first-out or FIFO policy. 
 
 **Steps**:
+    
     1. Implement a queue of at most n-1 elements using an array Q[1,...,n]
     2. The queue has an attribute Q.head that indexes or points to its head.
     3. The queue has an attribute Q.tail indexes at the next location at which a newly arriving element will be inserted into the queue. 
