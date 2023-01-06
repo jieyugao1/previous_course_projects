@@ -57,9 +57,9 @@ We say that an element with key k hashes to slot h(k). h(k) is the **hash value*
 
 If two or multiple keys hash to the same slot, we call this situation a **collision**. 
 
-**Solution**:
+#### Collision Solutions:
     
-    1. Chaining. 
+**Solution 1 Chaining** 
 
     In chaining, we place all the elements that has to the same slot into the same linked list. 
 
