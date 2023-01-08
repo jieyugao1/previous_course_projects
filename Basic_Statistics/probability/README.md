@@ -37,3 +37,15 @@ A random variable is a quantity with an associated probabilty distribution. It c
 ```math
     f_{X}(x) = \int_{-\infty}^{\infty} f_{Y}(y)f_{X|Y}(x|y)dy
 ```
+
+## Markov Chains
+
+A Markov chain is a process in which there is a finite set of states, and the probability of being in a particular state is only dependent on the previous state. The Markov property is such that, given the current state, the past and future states it will occupy are conditionally independent. 
+
+```math
+    P = \begin{pmatrix}
+p_{11} & ... & p_{1n}\\
+... & ... & ...\\
+p_{m1} & ... & p_{mn}
+\end{pmatrix}
+```
